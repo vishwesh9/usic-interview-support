@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad del Entrenador del Examen de Ciudadanía de EE.UU.</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #007AFF; }
+        h2 { color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .updated { background: #f5f5f5; padding: 10px; border-radius: 5px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Política de Privacidad del Entrenador del Examen de Ciudadanía de EE.UU.</h1>
+
+    <div class="updated">
+        <strong>Última actualización:</strong> Enero 2025
+    </div>
+
+    <h2>Información que recolectamos</h2>
+    <p>Recolectamos la información mínima necesaria para ofrecer nuestro servicio:</p>
+    <ul>
+        <li><strong>Información de cuenta:</strong> Correo electrónico para la creación y autenticación de la cuenta</li>
+        <li><strong>Información de pago:</strong> Datos de suscripción procesados a través de Apple App Store y RevenueCat</li>
+        <li><strong>Datos de práctica:</strong> Progreso, puntuaciones, estadísticas de estudio y resultados de sesiones de entrevista</li>
+        <li><strong>Grabaciones de audio:</strong> Grabaciones de voz para prácticas y evaluaciones de entrevistas con IA</li>
+        <li><strong>Identificadores de usuario:</strong> Identificadores anónimos para la gestión de cuentas y seguimiento del progreso</li>
+        <li><strong>Información del dispositivo:</strong> Identificadores de dispositivo para analíticas y funcionalidad de la aplicación</li>
+        <li><strong>Analíticas de uso:</strong> Patrones de uso y métricas de rendimiento para mejorar el servicio</li>
+        <li><strong>Datos de fallos:</strong> Información de diagnóstico técnico para corregir errores y mejorar la estabilidad</li>
+    </ul>
+
+    <h2>Cómo usamos tu información</h2>
+    <p>Todos los datos recolectados tienen dos propósitos principales:</p>
+    <ul>
+        <li><strong>Funcionalidad de la aplicación:</strong>
+            <ul>
+                <li>Ofrecer recomendaciones de estudio personalizadas y entrenamiento de entrevistas con IA</li>
+                <li>Seguimiento de tu progreso de aprendizaje e historial de sesiones</li>
+                <li>Procesar pagos de suscripción y gestionar el acceso a la cuenta</li>
+                <li>Autenticar usuarios y mantener sesiones seguras</li>
+                <li>Almacenar y recuperar grabaciones de audio para prácticas de entrevista</li>
+                <li>Proporcionar soporte al cliente y asistencia técnica</li>
+                <li>Garantizar la estabilidad de la aplicación y evitar fallos</li>
+            </ul>
+        </li>
+        <li><strong>Analíticas:</strong>
+            <ul>
+                <li>Analizar patrones de uso para mejorar la experiencia del usuario</li>
+                <li>Monitorizar el rendimiento de la aplicación e identificar problemas técnicos</li>
+                <li>Evaluar la efectividad de las funciones para guiar el desarrollo</li>
+                <li>Medir el compromiso y la retención de los usuarios</li>
+            </ul>
+        </li>
+    </ul>
+    <p><strong>Importante:</strong> No usamos tus datos para publicidad, marketing, seguimiento o personalización más allá de la funcionalidad básica de la aplicación.</p>
+
+    <h2>Compartir información</h2>
+    <p>No vendemos, intercambiamos ni compartimos tu información personal con terceros, excepto con nuestros proveedores de servicios esenciales:</p>
+    <ul>
+        <li><strong>Apple:</strong> Procesamiento de suscripciones y pagos a través de App Store</li>
+        <li><strong>RevenueCat:</strong> Gestión de suscripciones y procesamiento de pagos</li>
+        <li><strong>Supabase:</strong> Almacenamiento seguro de bases de datos y autenticación de usuarios</li>
+        <li><strong>Expo:</strong> Analíticas, informes de fallos y monitoreo de rendimiento</li>
+        <li><strong>Servicios de IA:</strong> Evaluación anónima de respuestas (los datos de audio no son almacenados por los proveedores de IA)</li>
+        <li><strong>Requisitos legales:</strong> Cuando lo exija la ley o un proceso legal</li>
+    </ul>
+
+    <h2>Almacenamiento y seguridad de datos</h2>
+    <ul>
+        <li>Todos los datos están cifrados en tránsito y en reposo con estándares de la industria</li>
+        <li>Las grabaciones de audio se procesan para la evaluación de IA y se almacenan de forma segura en nuestra base de datos</li>
+        <li>Los datos de práctica y progreso se almacenan de forma segura en nuestros servidores</li>
+        <li>La información de pago es procesada por Apple y RevenueCat; no almacenamos detalles de pago</li>
+        <li>Usamos medidas de seguridad estándar de la industria y actualizamos regularmente nuestras prácticas de seguridad</li>
+        <li>El acceso a los datos personales está restringido al personal autorizado</li>
+    </ul>
+
+    <h2>Retención de datos</h2>
+    <ul>
+        <li>Datos de cuenta y progreso: Se conservan mientras tu cuenta esté activa</li>
+        <li>Grabaciones de audio: Se conservan hasta que las elimines o cierres tu cuenta</li>
+        <li>Datos de analíticas: Los datos agregados y anonimizados pueden conservarse para mejorar el servicio</li>
+        <li>Datos de fallos y diagnóstico: Se conservan para análisis técnico y depuración</li>
+    </ul>
+
+    <h2>Tus derechos y control de datos</h2>
+    <p>Tienes derecho a:</p>
+    <ul>
+        <li>Acceder a tus datos personales almacenados en nuestros sistemas</li>
+        <li>Solicitar la corrección de datos personales inexactos</li>
+        <li>Solicitar la eliminación de tu cuenta y los datos asociados</li>
+        <li>Exportar tu progreso de estudio y datos de sesiones</li>
+        <li>Optar por no participar en la recolección de analíticas opcionales (las analíticas básicas permanecen activas)</li>
+        <li>Contactarnos por cualquier duda o preocupación sobre privacidad</li>
+    </ul>
+    <p>Para ejercer estos derechos, contáctanos con la información proporcionada a continuación.</p>
+
+    <h2>Privacidad de menores</h2>
+    <p>Nuestra aplicación está destinada a usuarios de 13 años o más. No recolectamos conscientemente información personal de menores de 13 años. Si nos enteramos de que hemos recolectado información de un menor de 13 años, tomaremos medidas para eliminarla rápidamente.</p>
+
+    <h2>Servicios de terceros</h2>
+    <p>Nuestra aplicación se integra con los siguientes servicios de terceros, cada uno con sus propias políticas de privacidad:</p>
+    <ul>
+        <li><strong>Apple App Store:</strong> Procesamiento de pagos y distribución de la aplicación</li>
+        <li><strong>RevenueCat:</strong> Gestión de suscripciones y procesamiento de pagos</li>
+        <li><strong>Supabase:</strong> Servicios de alojamiento de bases de datos y autenticación de usuarios</li>
+        <li><strong>Expo:</strong> Plataforma de desarrollo de aplicaciones con analíticas e informes de fallos</li>
+        <li><strong>Servicios de evaluación de IA:</strong> Servicios de terceros para la evaluación de respuestas (datos no almacenados)</li>
+    </ul>
+    <p>Te animamos a revisar las políticas de privacidad de estos servicios para entender cómo manejan tu información.</p>
+
+    <h2>Usuarios internacionales</h2>
+    <p>Nuestros servicios se proporcionan desde los Estados Unidos. Si accedes a nuestra aplicación desde fuera de los Estados Unidos, ten en cuenta que tu información puede ser transferida, almacenada y procesada en los Estados Unidos, donde se encuentran nuestros servidores y nuestra base de datos central.</p>
+
+    <h2>Derechos de privacidad en California</h2>
+    <p>Los residentes de California tienen derechos adicionales bajo la Ley de Privacidad del Consumidor de California (CCPA), incluyendo el derecho a saber qué información personal se recolecta, el derecho a eliminar información personal y el derecho a optar por no vender información personal. Nosotros no vendemos información personal.</p>
+
+    <h2>Cambios en esta política</h2>
+    <p>Podemos actualizar esta política de privacidad ocasionalmente para reflejar cambios en nuestras prácticas, tecnología, requisitos legales u otros factores. Notificaremos a los usuarios de cambios significativos actualizando la fecha de "Última actualización" y, cuando corresponda, proporcionando notificaciones adicionales a través de la aplicación o correo electrónico. El uso continuado de la aplicación tras los cambios implica la aceptación de la política actualizada.</p>
+
+    <h2>Contáctanos</h2>
+    <p>Para preguntas, inquietudes o para ejercer tus derechos de privacidad, contáctanos en:</p>
+    <p><strong>Correo electrónico:</strong> golukicoding@gmail.com</p>
+    <p><strong>Tiempo de respuesta:</strong> Intentamos responder a las solicitudes de privacidad en un plazo de 30 días</p>
+
+    <p><a href="index.html">← Volver al Soporte</a></p>
+</body>
+</html>
