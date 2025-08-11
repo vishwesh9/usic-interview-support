@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenador del Examen de Ciudadanía de EE.UU. - Soporte</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #007AFF; }
+        h2 { color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .contact { background: #f5f5f5; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .privacy-link { background: #e8f4fd; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #007AFF; }
+    </style>
+</head>
+<body>
+    <h1>Entrenador del Examen de Ciudadanía de EE.UU. - Soporte</h1>
+
+    <div class="contact">
+        <h2>Contáctanos</h2>
+        <p><strong>Correo electrónico:</strong> golukicoding@gmail.com</p>
+        <p><strong>Tiempo de respuesta:</strong> 24-48 horas</p>
+    </div>
+
+    <h2>Preguntas frecuentes</h2>
+
+    <h3>Suscripción y facturación</h3>
+    <p><strong>P: ¿Cómo restauro mi compra?</strong><br>
+    A: Ve a Configuración → Restaurar compra. Asegúrate de estar conectado con el mismo ID de Apple usado para la compra original.</p>
+
+    <p><strong>P: ¿Cómo cancelo mi suscripción?</strong><br>
+    A: Ve a Configuración del iPhone → ID de Apple → Suscripciones → Entrenador del Examen de Ciudadanía de EE.UU. → Cancelar suscripción.</p>
+
+    <p><strong>P: ¿Qué incluye la suscripción Premium?</strong><br>
+    A: Incluye sesiones de práctica ilimitadas, retroalimentación con IA, análisis detallados del rendimiento y acceso a todas las categorías de preguntas.</p>
+
+    <h3>Problemas técnicos</h3>
+    <p><strong>P: La aplicación se cierra al iniciar sesiones de práctica</strong><br>
+    A: Reinicia la aplicación y verifica que tienes la última versión. Si el problema persiste, contacta con soporte indicando el modelo de tu dispositivo y la versión de iOS.</p>
+
+    <p><strong>P: La retroalimentación de IA no funciona</strong><br>
+    A: Es una función Premium. Asegúrate de tener una suscripción activa y conexión a internet. La evaluación de IA requiere acceso a la red.</p>
+
+    <p><strong>P: Las preguntas de la entrevista en video no se cargan</strong><br>
+    A: Verifica tu conexión a internet e inténtalo de nuevo. Los videos se almacenan para práctica sin conexión una vez cargados.</p>
+
+    <h3>Práctica y funciones</h3>
+    <p><strong>P: He alcanzado el límite de sesiones diarias</strong><br>
+    A: Los usuarios gratuitos tienen 3 sesiones al día. Pasa a Premium para sesiones ilimitadas y funciones avanzadas.</p>
+
+    <p><strong>P: ¿Cómo funciona el entrenamiento de entrevistas con IA?</strong><br>
+    A: Nuestra IA analiza tus respuestas orales a las preguntas de la entrevista, ofreciendo retroalimentación personalizada sobre contenido, entrega y áreas de mejora.</p>
+
+    <p><strong>P: ¿Puedo practicar sin conexión?</strong><br>
+    A: Algunas funciones están disponibles sin conexión tras la descarga inicial, pero la evaluación de IA y el contenido nuevo requieren internet.</p>
+
+    <p><strong>P: CarPlay no funciona</strong><br>
+    A: Asegúrate de que tu coche soporta CarPlay y que tu iPhone está conectado. Ve al Modo Escucha para sesiones de práctica solo con audio.</p>
+
+    <h3>Audio y grabaciones</h3>
+    <p><strong>P: Mis grabaciones de audio no se guardan</strong><br>
+    A: Verifica que has otorgado permisos de micrófono a la aplicación en Configuración del iPhone → Privacidad y seguridad → Micrófono.</p>
+
+    <p><strong>P: ¿Puedo eliminar mis respuestas grabadas?</strong><br>
+    A: Sí, puedes eliminar grabaciones individuales desde el historial de práctica o contactar con soporte para una eliminación masiva.</p>
+
+    <div class="privacy-link">
+        <h2>Privacidad y datos</h2>
+        <p>Tu privacidad es importante. Recolectamos los datos mínimos necesarios para el funcionamiento de la aplicación y nunca los usamos para publicidad o seguimiento.</p>
+        <p><strong><a href="privacy.html">Consulta nuestra Política de Privacidad completa →</a></strong></p>
+    </div>
+
+    <h2>Reportar un error</h2>
+    <p>¿Encontraste un error? Envíanos un correo a <strong>golukicoding@gmail.com</strong> con:</p>
+    <ul>
+        <li>Modelo del dispositivo y versión de iOS</li>
+        <li>Versión de la aplicación (en Configuración)</li>
+        <li>Pasos para reproducir el problema</li>
+        <li>Capturas de pantalla o grabaciones si aplica</li>
+        <li>Mensajes de error recibidos</li>
+    </ul>
+
+    <h2>Sugerencias de mejora</h2>
+    <p>¿Tienes una idea para mejorar la aplicación? ¡Nos encantaría saberla! Envía tus sugerencias a <strong>golukicoding@gmail.com</strong>.</p>
+
+    <h2>Reseñas en la App Store</h2>
+    <p>Si disfrutas de la aplicación, considera dejar una reseña en la App Store. Tus comentarios nos ayudan a mejorar y a llegar a más usuarios.</p>
+</body>
+</html>
