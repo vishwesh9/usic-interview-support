@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenador del Test de Ciutadania dels EUA - Suport</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #007AFF; }
+        h2 { color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .contact { background: #f5f5f5; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .privacy-link { background: #e8f4fd; padding: 15px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #007AFF; }
+    </style>
+</head>
+<body>
+    <h1>Entrenador del Test de Ciutadania dels EUA - Suport</h1>
+
+    <div class="contact">
+        <h2>Contacta amb nosaltres</h2>
+        <p><strong>Correu electrònic:</strong> golukicoding@gmail.com</p>
+        <p><strong>Temps de resposta:</strong> 24-48 hores</p>
+    </div>
+
+    <h2>Preguntes freqüents</h2>
+
+    <h3>Subscripció i facturació</h3>
+    <p><strong>P: Com puc restaurar la meva compra?</strong><br>
+    A: Ves a Configuració → Restaurar compra. Assegura't que has iniciat sessió amb el mateix ID d'Apple usat per a la compra original.</p>
+
+    <p><strong>P: Com puc cancel·lar la meva subscripció?</strong><br>
+    A: Ves a Configuració de l'iPhone → ID d'Apple → Subscripcions → Entrenador del Test de Ciutadania dels EUA → Cancel·lar subscripció.</p>
+
+    <p><strong>P: Què inclou la subscripció Premium?</strong><br>
+    A: Inclou sessions de pràctica il·limitades, retroacció amb IA, anàlisis detallades del rendiment i accés a totes les categories de preguntes.</p>
+
+    <h3>Problemes tècnics</h3>
+    <p><strong>P: L’aplicació es tanca quan inicio sessions de pràctica</strong><br>
+    A: Reinicia l’aplicació i assegura’t que tens l’última versió. Si el problema persisteix, contacta amb el suport indicant el model del dispositiu i la versió d’iOS.</p>
+
+    <p><strong>P: La retroacció de la IA no funciona</strong><br>
+    A: És una funció Premium. Comprova que tens una subscripció activa i connexió a internet. L’avaluació de la IA requereix accés a la xarxa.</p>
+
+    <p><strong>P: Les preguntes de l’entrevista en vídeo no es carreguen</strong><br>
+    A: Comprova la connexió a internet i torna-ho a provar. Els vídeos es guarden per a pràctica fora de línia un cop carregats.</p>
+
+    <h3>Pràctica i funcions</h3>
+    <p><strong>P: He arribat al límit de sessions diàries</strong><br>
+    A: Els usuaris gratuïts tenen 3 sessions al dia. Passa a Premium per a sessions il·limitades i funcions avançades.</p>
+
+    <p><strong>P: Com funciona l’entrenament d’entrevistes amb IA?</strong><br>
+    A: La IA analitza les teves respostes parlades, oferint retroacció personalitzada sobre contingut, entrega i àrees de millora.</p>
+
+    <p><strong>P: Puc practicar sense connexió?</strong><br>
+    A: Algunes funcions estan disponibles sense connexió després de la descàrrega inicial, però l’avaluació de la IA i el contingut nou requereixen internet.</p>
+
+    <p><strong>P: CarPlay no funciona</strong><br>
+    A: Assegura’t que el teu cotxe suporta CarPlay i que l’iPhone està connectat. Ves al Mode d’Escolta per a sessions de pràctica només amb àudio.</p>
+
+    <h3>Àudio i enregistraments</h3>
+    <p><strong>P: Els meus enregistraments d’àudio no es guarden</strong><br>
+    A: Comprova que has atorgat permisos de micròfon a l’aplicació a Configuració de l’iPhone → Privadesa i seguretat → Micròfon.</p>
+
+    <p><strong>P: Puc esborrar les meves respostes enregistrades?</strong><br>
+    A: Sí, pots esborrar enregistraments individuals des de l’historial de pràctica o contactar amb el suport per a una eliminació massiva.</p>
+
+    <div class="privacy-link">
+        <h2>Privadesa i dades</h2>
+        <p>La teva privadesa és important. Recollim les dades mínimes necessàries per al funcionament de l’aplicació i mai les usem per a publicitat ni seguiment.</p>
+        <p><strong><a href="privacy.html">Consulta la nostra Política de Privadesa completa →</a></strong></p>
+    </div>
+
+    <h2>Informar d’un error</h2>
+    <p>Has trobat un error? Envia’ns un correu a <strong>golukicoding@gmail.com</strong> amb:</p>
+    <ul>
+        <li>Model del dispositiu i versió d’iOS</li>
+        <li>Versió de l’aplicació (a Configuració)</li>
+        <li>Passos per reproduir el problema</li>
+        <li>Captures de pantalla o enregistraments si escau</li>
+        <li>Missatges d’error rebuts</li>
+    </ul>
+
+    <h2>Suggeriments de millora</h2>
+    <p>Tens alguna idea per millorar l’aplicació? Envia’ns els teus suggeriments a <strong>golukicoding@gmail.com</strong>.</p>
+
+    <h2>Ressenyes a l’App Store</h2>
+    <p>Si t’agrada l’aplicació, considera deixar una ressenya a l’App Store. Els teus comentaris ens ajuden a millorar i a arribar a més usuaris.</p>
+</body>
+</html>
