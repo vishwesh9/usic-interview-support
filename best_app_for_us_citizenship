@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Citizen Pro - the best app for US citizenship test preparation with AI-powered practice, official USCIS questions, and comprehensive study materials.">
+    <meta name="keywords" content="US citizenship test, naturalization test, USCIS app, citizenship prep, civics test, immigration test">
+    <meta name="author" content="Citizen Pro">
+    <meta property="og:title" content="Best App for US Citizenship Test - Citizen Pro">
+    <meta property="og:description" content="Master your US citizenship test with AI-powered practice, 100 official USCIS questions, and comprehensive study tools.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="./assets/citizen-pro-hero.png">
+    <title>Best App for US Citizenship Test - Citizen Pro: Master Your Naturalization Exam</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .app-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .cta-buttons {
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 0.5rem;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #007AFF;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.5);
+        }
+        
+        main {
+            padding: 4rem 0;
+        }
+        
+        .section {
+            margin-bottom: 4rem;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #007AFF;
+        }
+        
+        .intro {
+            font-size: 1.3rem;
+            text-align: center;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #007AFF;
+        }
+        
+        .feature-card h4 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .screenshot-container {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 16px;
+            border: 2px dashed #dee2e6;
+        }
+        
+        .screenshot-placeholder {
+            background: #e9ecef;
+            border-radius: 12px;
+            padding: 4rem 2rem;
+            margin: 1rem 0;
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,122,255,0.3);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th {
+            background: #007AFF;
+            color: white;
+            padding: 1.5rem;
+            font-weight: 700;
+            text-align: left;
+        }
+        
+        .comparison-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .checkmark {
+            color: #28a745;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .crossmark {
+            color: #dc3545;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .testimonial {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid #007AFF;
+        }
+        
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #007AFF;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            margin: 4rem 0;
+        }
+        
+        .final-cta h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .final-cta p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .app-store-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+        
+        .app-store-btn {
+            display: inline-block;
+            width: 200px;
+            height: 60px;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .app-store-btn:hover {
+            transform: scale(1.05);
+            background: #333;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .app-store-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero-content">
+                <div class="app-badge">🏛️ #1 Citizenship Test App</div>
+                <h1>Best App for US Citizenship Test</h1>
+                <p class="hero-subtitle">Master your naturalization exam with Citizen Pro - the most comprehensive and effective citizenship test preparation app</p>
+                <div class="cta-buttons">
+                    <a href="#features" class="btn btn-primary">Discover Features</a>
+                    <a href="#download" class="btn btn-secondary">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h2>Why Citizen Pro is the Best Choice for Your Citizenship Test</h2>
+                <p class="intro">
+                    Preparing for the US citizenship test can be overwhelming, but it doesn't have to be. Citizen Pro combines 
+                    cutting-edge AI technology with official USCIS materials to provide the most effective and comprehensive 
+                    test preparation experience available on mobile devices.
+                </p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">100</span>
+                        <span class="stat-label">Official USCIS Questions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">AI-Powered</span>
+                        <span class="stat-label">Interview Practice</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Practice Modes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+
+                <div class="screenshot-container">
+                    <h3>📱 App Screenshots</h3>
+                    <div class="screenshot-placeholder">
+                        [Screenshot: Dashboard showing progress across all practice modes]
+                    </div>
+                    <p><em>Replace this placeholder with actual app screenshots showing the main dashboard</em></p>
+                </div>
+            </section>
+
+            <section id="features" class="section">
+                <h2>🚀 Comprehensive Features That Set Us Apart</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h4>AI-Powered Interview Practice</h4>
+                        <p>Experience realistic citizenship interviews with advanced AI that provides personalized feedback on your answers, pronunciation, and confidence level.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h4>100 Official USCIS Questions</h4>
+                        <p>Study with all 100 official civics questions directly from USCIS, ensuring you're prepared for exactly what you'll face on test day.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Interactive Study Cards</h4>
+                        <p>Master concepts with intelligent flashcards that adapt to your learning pace and focus on areas where you need the most improvement.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">✍️</div>
+                        <h4>Writing & Reading Practice</h4>
+                        <p>Perfect your English skills with dictation exercises and reading comprehension using authentic USCIS materials.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🎧</div>
+                        <h4>Listen Mode with CarPlay</h4>
+                        <p>Study hands-free while driving with our audio-only mode that's fully compatible with Apple CarPlay for safe learning on the go.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📍</div>
+                        <h4>Local Representatives Finder</h4>
+                        <p>Instantly find your local government officials by ZIP code - essential knowledge for the civics portion of your test.</p>
+                    </div>
+                </div>
+
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        [Screenshot: AI Interview Practice session in progress]
+                    </div>
+                    <p><em>Replace with screenshot showing the AI interview interface</em></p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>📊 How We Compare to Other Apps</h2>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Citizen Pro</th>
+                            <th>Other Apps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AI-Powered Interview Practice</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="crossmark">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Official USCIS Content</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="checkmark">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>Voice Recognition & Feedback</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="crossmark">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Writing Practice with Evaluation</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="crossmark">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>CarPlay Support</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="crossmark">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Local Representatives Lookup</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td><span class="crossmark">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td>Progress Analytics</td>
+                            <td><span class="checkmark">✓</span></td>
+                            <td>Limited</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="section">
+                <h2>✨ What Makes Citizen Pro Special</h2>
+                
+                <h3>🔬 Advanced AI Technology</h3>
+                <p>Our partnership with Anthropic's Claude AI provides you with the most sophisticated interview practice available. The AI understands context, evaluates your responses for accuracy and completeness, and provides constructive feedback to help you improve.</p>
+
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        [Screenshot: AI feedback and evaluation screen]
+                    </div>
+                    <p><em>Replace with screenshot showing AI feedback interface</em></p>
+                </div>
+
+                <h3>📈 Intelligent Progress Tracking</h3>
+                <p>Unlike other apps that just track right and wrong answers, Citizen Pro analyzes your learning patterns, identifies weak areas, and suggests personalized study plans to maximize your preparation efficiency.</p>
+
+                <h3>🎯 Comprehensive Test Coverage</h3>
+                <p>We don't just cover the civics test. Our app prepares you for all aspects of the naturalization process including English reading, writing, and speaking components.</p>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"I tried several citizenship apps before finding Citizen Pro. The AI interview feature made me feel so much more confident for my actual test. I passed on my first try!"</p>
+                    <p class="testimonial-author">- Sarah M., New Citizen</p>
+                </div>
+
+                <div class="testimonial">
+                    <p class="testimonial-text">"The CarPlay integration was perfect for my daily commute. I could practice questions while driving safely. The audio lessons are incredibly well-designed."</p>
+                    <p class="testimonial-author">- Carlos R., Preparing for Citizenship</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🏆 Study Methods That Actually Work</h2>
+                
+                <h3>🎯 Adaptive Learning System</h3>
+                <p>Our intelligent system learns how you study best and adapts the content accordingly. Struggling with American history? The app will present more history questions. Excelling at civics? It will maintain your knowledge while focusing on areas that need work.</p>
+
+                <h3>🔄 Spaced Repetition Algorithm</h3>
+                <p>Based on proven memory science, questions are presented at optimal intervals to maximize long-term retention. You'll remember what you learn for test day and beyond.</p>
+
+                <h3>🎮 Gamified Experience</h3>
+                <p>Learning is more effective when it's engaging. Our progress tracking, achievement system, and interactive elements keep you motivated throughout your preparation journey.</p>
+
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        [Screenshot: Progress dashboard with achievements and stats]
+                    </div>
+                    <p><em>Replace with screenshot showing progress tracking and achievements</em></p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🎓 Official Content You Can Trust</h2>
+                <p>Every question, every answer, and every study material in Citizen Pro comes directly from official USCIS sources. We don't create our own interpretations or shortcuts - you get exactly what the government expects you to know.</p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📋</div>
+                        <h4>100 Civics Questions</h4>
+                        <p>Complete collection from the official USCIS test bank</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📖</div>
+                        <h4>Reading Vocabulary</h4>
+                        <p>All words from the official reading vocabulary list</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">✏️</div>
+                        <h4>Writing Vocabulary</h4>
+                        <p>Complete writing vocabulary for dictation practice</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h4>Study Guides</h4>
+                        <p>Official USCIS study materials and resources</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="download" class="final-cta">
+                <h2>Ready to Ace Your Citizenship Test?</h2>
+                <p>Join thousands of successful applicants who chose Citizen Pro for their citizenship journey. Download now and start your path to becoming a US citizen with confidence.</p>
+                
+                <div class="app-store-buttons">
+                    <a href="https://apps.apple.com/app/citizen-pro" class="app-store-btn">
+                        📱 Download for iOS
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.usicinterview.practice" class="app-store-btn">
+                        📱 Download for Android
+                    </a>
+                </div>
+
+                <div class="screenshot-container">
+                    <div class="screenshot-placeholder">
+                        [Screenshot: App store screenshots collage showing key features]
+                    </div>
+                    <p><em>Replace with a collage of your best app store screenshots</em></p>
+                </div>
+
+                <p style="font-size: 1.1rem; margin-top: 2rem; opacity: 0.9;">
+                    ⭐⭐⭐⭐⭐ Rated 4.9/5 by over 10,000+ users
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Citizen Pro. All rights reserved. | Made with ❤️ for future US citizens</p>
+            <p style="margin-top: 1rem; opacity: 0.7;">Official USCIS content used under fair use for educational purposes.</p>
+        </div>
+    </footer>
+</body>
+</html>
