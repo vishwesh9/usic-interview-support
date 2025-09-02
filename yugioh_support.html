@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - YuGiOh Scanner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        
+        .section h3 {
+            color: #34495e;
+            font-size: 1.2rem;
+            margin: 25px 0 15px 0;
+        }
+        
+        .section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .section ul, .section ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        .section li {
+            margin-bottom: 8px;
+        }
+        
+        .faq-item {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #667eea;
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .tip {
+            background-color: #e7f3ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #2196F3;
+        }
+        
+        .warning {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contact-card h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .contact-info {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .troubleshoot-step {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #28a745;
+        }
+        
+        .step-number {
+            background-color: #28a745;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        
+        .quick-link {
+            background-color: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .quick-link:hover {
+            background-color: #5a67d8;
+            color: white;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .section h2 {
+                font-size: 1.3rem;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quick-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Support Center</h1>
+            <p class="subtitle">YuGiOh Scanner - We're here to help!</p>
+        </div>
+        
+        <div class="content">
+            <div class="quick-links">
+                <a href="#getting-started" class="quick-link">Getting Started</a>
+                <a href="#faq" class="quick-link">FAQ</a>
+                <a href="#troubleshooting" class="quick-link">Troubleshooting</a>
+                <a href="#contact" class="quick-link">Contact Support</a>
+            </div>
+
+            <div class="section" id="getting-started">
+                <h2>🚀 Getting Started</h2>
+                <p>Welcome to YuGiOh Scanner! Here's everything you need to know to get started with managing your Yu-Gi-Oh card collection.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Download & Install</h3>
+                        <p>Download YuGiOh Scanner from the App Store or Google Play Store. The app is free to use with no hidden fees.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📸</div>
+                        <h3>Scan Your Cards</h3>
+                        <p>Use your device's camera to scan Yu-Gi-Oh cards. Our AI will instantly identify them and add to your collection.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Manage Collection</h3>
+                        <p>Organize your cards, track values, and build decks. Everything is stored securely on your device.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Track Prices</h3>
+                        <p>Get real-time market prices from TCGPlayer, eBay, and CardMarket to know your collection's value.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" id="faq">
+                <h2>❓ Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Is YuGiOh Scanner free to use?</div>
+                    <div class="faq-answer">A: Yes! YuGiOh Scanner is completely free to download and use. All core features including card scanning, collection management, and price tracking are available at no cost.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Do I need to create an account?</div>
+                    <div class="faq-answer">A: No account creation required! All your data is stored locally on your device, giving you complete control and privacy over your collection information.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: How accurate is the card scanning?</div>
+                    <div class="faq-answer">A: Our AI-powered scanning technology has over 95% accuracy rate for Yu-Gi-Oh cards. It works best with clear, well-lit photos of cards in good condition.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Can I scan foreign language cards?</div>
+                    <div class="faq-answer">A: Yes! The scanner can identify cards in multiple languages including Japanese, German, French, Italian, and Spanish versions.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: How often are prices updated?</div>
+                    <div class="faq-answer">A: Prices are updated in real-time when you request them. We cache pricing data for 24 hours to provide fast loading while ensuring reasonable freshness.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Is my collection data backed up?</div>
+                    <div class="faq-answer">A: Currently, data is stored locally on your device. We recommend using your device's backup features (iCloud, Google Backup) to protect your collection data.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Can I export my collection list?</div>
+                    <div class="faq-answer">A: Yes! You can export your collection data in CSV format for use in spreadsheets or other applications. Look for the export option in the Collection tab.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Does the app work offline?</div>
+                    <div class="faq-answer">A: Basic functionality works offline, including viewing your collection and deck building. However, card scanning, price updates, and database searches require an internet connection.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: Are you affiliated with Konami or Yu-Gi-Oh?</div>
+                    <div class="faq-answer">A: No, YuGiOh Scanner is an independent app created by fans for fans. We are not affiliated with Konami or any official Yu-Gi-Oh entities.</div>
+                </div>
+            </div>
+
+            <div class="section" id="troubleshooting">
+                <h2>🔧 Troubleshooting</h2>
+                
+                <h3>Camera/Scanning Issues</h3>
+                
+                <div class="troubleshoot-step">
+                    <span class="step-number">1</span>
+                    <strong>Camera Permission:</strong> Ensure the app has camera access in your device settings. Go to Settings > Privacy > Camera (iOS) or Settings > Apps > YuGiOh Scanner > Permissions (Android).
+                </div>
+                
+                <div class="troubleshoot-step">
+                    <span class="step-number">2</span>
+                    <strong>Lighting Conditions:</strong> Use good lighting when scanning. Natural light or bright indoor lighting works best. Avoid shadows and glare on the card surface.
+                </div>
+                
+                <div class="troubleshoot-step">
+                    <span class="step-number">3</span>
+                    <strong>Card Position:</strong> Hold the card flat and fill most of the camera frame. Ensure the entire card is visible and not cut off at the edges.
+                </div>
+                
+                <div class="troubleshoot-step">
+                    <span class="step-number">4</span>
+                    <strong>Card Condition:</strong> Very damaged, worn, or heavily played cards may be harder to scan. Try scanning a cleaner version of the same card if available.
+                </div>
+
+                <h3>App Performance Issues</h3>
+                
+                <div class="troubleshoot-step">
+                    <span class="step-number">1</span>
+                    <strong>Restart the App:</strong> Close the app completely and reopen it. On iOS, swipe up and swipe away the app. On Android, use the recent apps button.
+                </div>
+                
+                <div class="troubleshoot-step">
+                    <span class="step-number">2</span>
+                    <strong>Check Internet Connection:</strong> Ensure you have a stable internet connection for scanning and price updates. Try switching between WiFi and mobile data.
+                </div>
+                
+                <div class="troubleshoot-step">
+                    <span class="step-number">3</span>
+                    <strong>Update the App:</strong> Make sure you're using the latest version from your app store. Updates often include performance improvements and bug fixes.
+                </div>
+                
+                <div class="troubleshoot-step">
+                    <span class="step-number">4</span>
+                    <strong>Free Up Storage:</strong> Ensure your device has sufficient storage space. Low storage can cause app performance issues.
+                </div>
+
+                <h3>Deck Building Issues</h3>
+                
+                <div class="tip">
+                    <strong>💡 Tip:</strong> Yu-Gi-Oh decks must follow official tournament rules:
+                    <ul>
+                        <li>Main Deck: 40-60 cards</li>
+                        <li>Extra Deck: 0-15 cards</li>
+                        <li>Side Deck: 0-15 cards</li>
+                        <li>Maximum 3 copies of any card (except Limited/Semi-Limited)</li>
+                    </ul>
+                </div>
+
+                <h3>Price Data Issues</h3>
+                
+                <div class="warning">
+                    <strong>⚠️ Important:</strong> Prices are estimates from various sources and may not reflect current market conditions. Always verify prices before making purchases or trades.
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Why do some cards show $0.00?</div>
+                    <div class="faq-answer">This usually means the card is not currently available in the marketplace or has no recent sales data. Check alternative sources or wait for market data to refresh.</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📱 System Requirements</h2>
+                
+                <div class="highlight">
+                    <strong>Minimum Requirements:</strong>
+                    <ul>
+                        <li><strong>iOS:</strong> iOS 13.0 or later, iPhone 6s or newer</li>
+                        <li><strong>Android:</strong> Android 8.0 (API level 26) or later</li>
+                        <li><strong>Storage:</strong> 100MB free space</li>
+                        <li><strong>Camera:</strong> Rear-facing camera for scanning</li>
+                        <li><strong>Internet:</strong> Required for card database and price updates</li>
+                    </ul>
+                </div>
+
+                <div class="tip">
+                    <strong>💡 Recommended:</strong> For best performance, use devices with at least 3GB RAM and recent camera technology for optimal scanning accuracy.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>🛡️ Privacy & Security</h2>
+                
+                <p>Your privacy and data security are our top priorities:</p>
+                <ul>
+                    <li><strong>Local Storage:</strong> All collection data is stored on your device</li>
+                    <li><strong>No Cloud Sync:</strong> We don't upload your personal collection to our servers</li>
+                    <li><strong>Camera Privacy:</strong> Photos are processed locally and not transmitted</li>
+                    <li><strong>Anonymous Analytics:</strong> Only anonymous usage data is collected to improve the app</li>
+                </ul>
+                
+                <p>For complete privacy information, please review our <a href="yugioh_privacy.html" style="color: #667eea;">Privacy Policy</a>.</p>
+            </div>
+
+            <div class="section">
+                <h2>🆕 Feature Requests</h2>
+                
+                <p>We're constantly improving YuGiOh Scanner based on user feedback. Here are some features we're considering:</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">☁️</div>
+                        <h3>Cloud Backup</h3>
+                        <p>Sync your collection across devices with optional cloud storage.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>Trading Features</h3>
+                        <p>Connect with other collectors to trade cards and share wishlists.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Advanced Analytics</h3>
+                        <p>Detailed collection statistics and value tracking over time.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Tournament Tools</h3>
+                        <p>Deck testing, match tracking, and tournament preparation features.</p>
+                    </div>
+                </div>
+                
+                <p>Have an idea for a new feature? <a href="#contact" style="color: #667eea;">Contact us</a> and let us know!</p>
+            </div>
+
+            <div class="section" id="contact">
+                <h2>📧 Contact Support</h2>
+                
+                <div class="contact-card">
+                    <h3>Need Help? We're Here for You!</h3>
+                    <p>Our support team typically responds within 24-48 hours. Please include as much detail as possible about your issue.</p>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Support Channels:</h3>
+                    
+                    <p><strong>📧 Email Support:</strong></p>
+                    <p>Primary: <a href="mailto:golukicoding@gmail.com" style="color: #667eea;">golukicoding@gmail.com</a></p>
+                    <p>General Inquiries: <a href="mailto:golukicoding@gmail.com" style="color: #667eea;">golukicoding@gmail.com</a></p>
+                    
+                    <p><strong>👨‍💻 Developer:</strong> Vishwesh Pratap Singh</p>
+                    
+                    <p><strong>⏰ Response Time:</strong> We aim to respond to all support requests within 48 hours during business days.</p>
+                    
+                    <div class="tip">
+                        <strong>📝 When contacting support, please include:</strong>
+                        <ul>
+                            <li>Your device model and OS version</li>
+                            <li>App version number</li>
+                            <li>Detailed description of the issue</li>
+                            <li>Steps you've already tried</li>
+                            <li>Screenshots if applicable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>⭐ Rate & Review</h2>
+                
+                <p>Enjoying YuGiOh Scanner? Please consider leaving a positive review on your app store. Your feedback helps other duelists discover the app and motivates us to keep improving!</p>
+                
+                <div class="highlight">
+                    <strong>Your reviews help us:</strong>
+                    <ul>
+                        <li>Reach more Yu-Gi-Oh collectors and players</li>
+                        <li>Understand what features matter most</li>
+                        <li>Prioritize bug fixes and improvements</li>
+                        <li>Keep the app free for everyone</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📚 Additional Resources</h2>
+                
+                <p>For more information about Yu-Gi-Oh and card collection:</p>
+                <ul>
+                    <li><strong>Official Yu-Gi-Oh Website:</strong> <a href="https://www.yugioh-card.com/" target="_blank" style="color: #667eea;">yugioh-card.com</a></li>
+                    <li><strong>Yu-Gi-Oh Database:</strong> <a href="https://www.db.yugioh-card.com/" target="_blank" style="color: #667eea;">Official Card Database</a></li>
+                    <li><strong>Tournament Rules:</strong> <a href="https://www.yugioh-card.com/en/rulebook/" target="_blank" style="color: #667eea;">Official Rulebook</a></li>
+                    <li><strong>Card Prices:</strong> <a href="https://www.tcgplayer.com/" target="_blank" style="color: #667eea;">TCGPlayer</a></li>
+                </ul>
+                
+                <div class="warning">
+                    <strong>Disclaimer:</strong> YuGiOh Scanner is not affiliated with Konami or any official Yu-Gi-Oh entities. All trademarks are property of their respective owners.
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 YuGiOh Scanner. All rights reserved.</p>
+            <p>Thank you for using YuGiOh Scanner - Happy Collecting! 🎴</p>
+        </div>
+    </div>
+</body>
+</html>
