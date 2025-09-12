@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Pokemon Card Scanner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            border-radius: 15px 15px 0 0;
+            margin: -20px -20px 40px -20px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #059669;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #374151;
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .faq-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            background: #e2e8f0;
+            padding: 15px 20px;
+            font-weight: 600;
+            color: #1e293b;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .faq-question:hover {
+            background: #cbd5e1;
+        }
+        
+        .faq-answer {
+            padding: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .contact-info {
+            background: #f0fdf4;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #10b981;
+            margin: 30px 0;
+        }
+        
+        .contact-method {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #d1fae5;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .contact-method h4 {
+            color: #059669;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        
+        .status-operational {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        .status-maintenance {
+            background: #fef3c7;
+            color: #92400e;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .troubleshooting-steps {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .last-updated {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+                border-radius: 10px;
+            }
+            
+            .header {
+                margin: -15px -15px 30px -15px;
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .contact-method {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Support Center</h1>
+            <p>Get help with Pokemon Card Scanner</p>
+        </div>
+        
+        <h2>🚀 Quick Start Guide</h2>
+        
+        <div class="troubleshooting-steps">
+            <h4>Getting Started with Pokemon Card Scanner:</h4>
+            <ol>
+                <li><strong>Download & Install:</strong> Install the app from the App Store or Google Play</li>
+                <li><strong>Camera Permissions:</strong> Grant camera access when prompted for scanning functionality</li>
+                <li><strong>Start Scanning:</strong> Point your camera at a Pokemon card and tap the shutter button</li>
+                <li><strong>Build Your Collection:</strong> Add identified cards to your personal collection</li>
+                <li><strong>Create Decks:</strong> Organize your cards into custom decks for gameplay</li>
+            </ol>
+        </div>
+        
+        <h2>❓ Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">How does card scanning work?</div>
+            <div class="faq-answer">
+                <p>Our app uses advanced OCR (Optical Character Recognition) technology powered by AI to identify Pokemon cards from photos. Simply point your camera at a card, and the app will automatically detect and identify it using the card's text, images, and layout.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Why isn't my card being recognized?</div>
+            <div class="faq-answer">
+                <p>Card recognition issues can occur due to:</p>
+                <ul>
+                    <li>Poor lighting conditions</li>
+                    <li>Blurry or tilted photos</li>
+                    <li>Damaged or heavily played cards</li>
+                    <li>Non-English cards (currently we support English cards primarily)</li>
+                    <li>Very rare or custom cards not in our database</li>
+                </ul>
+                <p><strong>Tips:</strong> Ensure good lighting, hold the camera steady, and try different angles.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What premium features are included?</div>
+            <div class="faq-answer">
+                <p>Premium subscription includes:</p>
+                <ul>
+                    <li>Unlimited card scanning (free version limited to 10 per day)</li>
+                    <li>Advanced collection analytics and statistics</li>
+                    <li>Price tracking and market alerts</li>
+                    <li>Cloud sync across all your devices</li>
+                    <li>Bulk import/export features</li>
+                    <li>Priority customer support</li>
+                    <li>Ad-free experience</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How do I cancel my subscription?</div>
+            <div class="faq-answer">
+                <p>Subscriptions are managed through your device's app store:</p>
+                <p><strong>iOS:</strong> Settings → Your Name → Subscriptions → Pokemon Card Scanner → Cancel</p>
+                <p><strong>Android:</strong> Play Store → Menu → Subscriptions → Pokemon Card Scanner → Cancel</p>
+                <p>Cancellation takes effect at the end of your current billing period.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is my collection data safe?</div>
+            <div class="faq-answer">
+                <p>Yes! Your collection data is:</p>
+                <ul>
+                    <li>Stored locally on your device by default</li>
+                    <li>Encrypted during cloud sync (premium feature)</li>
+                    <li>Never shared with third parties</li>
+                    <li>Backed up securely on our servers (if cloud sync enabled)</li>
+                    <li>Exportable at any time in standard formats</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Can I import my existing collection?</div>
+            <div class="faq-answer">
+                <p>Yes! Premium users can import collections from:</p>
+                <ul>
+                    <li>CSV files with card names and quantities</li>
+                    <li>Other popular collection apps (contact support for specific formats)</li>
+                    <li>Manual entry with search and autocomplete</li>
+                    <li>Bulk photo scanning mode</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h2>🛠️ Troubleshooting</h2>
+        
+        <h3>App Performance Issues</h3>
+        <div class="troubleshooting-steps">
+            <p>If the app is running slowly or crashing:</p>
+            <ol>
+                <li>Close and restart the app</li>
+                <li>Restart your device</li>
+                <li>Ensure you have the latest app version</li>
+                <li>Free up device storage space (at least 1GB recommended)</li>
+                <li>Check your internet connection</li>
+            </ol>
+        </div>
+        
+        <h3>Camera/Scanning Problems</h3>
+        <div class="troubleshooting-steps">
+            <p>If camera scanning isn't working:</p>
+            <ol>
+                <li>Check app permissions in device settings</li>
+                <li>Clean your camera lens</li>
+                <li>Ensure adequate lighting</li>
+                <li>Try different angles and distances</li>
+                <li>Restart the app</li>
+            </ol>
+        </div>
+        
+        <h3>Sync Issues</h3>
+        <div class="troubleshooting-steps">
+            <p>If your data isn't syncing between devices:</p>
+            <ol>
+                <li>Verify you're signed in to the same account</li>
+                <li>Check your internet connection</li>
+                <li>Force close and reopen the app</li>
+                <li>Manually trigger sync in settings</li>
+                <li>Contact support if issues persist</li>
+            </ol>
+        </div>
+        
+        <h2>📱 System Requirements</h2>
+        
+        <p><strong>iOS:</strong> iPhone 6s or newer, iOS 14.0 or later</p>
+        <p><strong>Android:</strong> Android 7.0 or later, 3GB RAM minimum</p>
+        <p><strong>Storage:</strong> 200MB free space minimum</p>
+        <p><strong>Camera:</strong> Rear-facing camera with autofocus</p>
+        <p><strong>Internet:</strong> Required for card identification and premium features</p>
+        
+        <h2>🌐 Service Status</h2>
+        
+        <p><strong>App Servers:</strong> <span class="status-indicator status-operational">Operational</span></p>
+        <p><strong>Card Recognition API:</strong> <span class="status-indicator status-operational">Operational</span></p>
+        <p><strong>Cloud Sync:</strong> <span class="status-indicator status-operational">Operational</span></p>
+        <p><strong>Price Data:</strong> <span class="status-indicator status-operational">Operational</span></p>
+        
+        <div class="contact-info">
+            <h2>📞 Contact Support</h2>
+            <p>Need additional help? Our support team is here to assist you!</p>
+            
+            <div class="contact-method">
+                <h4>📧 Email Support</h4>
+                <p><strong>golukicoding@gmail.com</strong></p>
+                <p>Response time: Within 24 hours<br>
+                Best for: Detailed technical issues, account problems</p>
+            </div>
+            
+            <div class="contact-method">
+                <h4>🔄 In-App Support</h4>
+                <p>Use the "Contact Support" option in app settings</p>
+                <p>Response time: Within 12 hours<br>
+                Best for: Quick questions, bug reports with automatic diagnostics</p>
+            </div>
+            
+            
+            <div class="contact-method">
+                <h4>📱 Social Media</h4>
+                <p><strong>@PokemonScanner</strong> on Twitter/X</p>
+                <p>Follow for updates, tips, and community discussions</p>
+            </div>
+        </div>
+        
+        <h2>💡 Tips for Best Results</h2>
+        
+        <ul>
+            <li><strong>Lighting:</strong> Use natural light or bright indoor lighting for best scan accuracy</li>
+            <li><strong>Positioning:</strong> Hold your device 6-12 inches from the card</li>
+            <li><strong>Stability:</strong> Keep the camera steady and allow it to focus</li>
+            <li><strong>Card Condition:</strong> Clean cards scan better than dirty or damaged ones</li>
+            <li><strong>Background:</strong> Use a plain, contrasting background when possible</li>
+            <li><strong>Updates:</strong> Keep the app updated for the latest recognition improvements</li>
+        </ul>
+        
+        <h2>🎯 Feature Requests</h2>
+        
+        <p>Have an idea for a new feature? We'd love to hear from you! Send your suggestions to <strong>golukicoding@gmail.com</strong>. Popular requests include:</p>
+        
+        <ul>
+            <li>Support for additional card games</li>
+            <li>Trading/marketplace features</li>
+            <li>Enhanced deck building tools</li>
+            <li>Tournament tracking</li>
+            <li>Collection sharing with friends</li>
+        </ul>
+        
+        <div class="last-updated">
+            <p>Last updated: September 12, 2025</p>
+            <p>Support documentation version 1.2</p>
+        </div>
+    </div>
+</body>
+</html>
