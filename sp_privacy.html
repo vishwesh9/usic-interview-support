@@ -9,6 +9,7 @@
         h1 { color: #007AFF; }
         h2 { color: #333; border-bottom: 1px solid #eee; padding-bottom: 10px; }
         .updated { background: #f5f5f5; padding: 10px; border-radius: 5px; margin: 20px 0; }
+        .highlight { background: #e8f4fd; padding: 5px; border-radius: 3px; }
     </style>
 </head>
 <body>
@@ -27,6 +28,7 @@
         <li><strong>Grabaciones de audio:</strong> Grabaciones de voz para prácticas y evaluaciones de entrevistas con IA</li>
         <li><strong>Identificadores de usuario:</strong> Identificadores anónimos para la gestión de cuentas y seguimiento del progreso</li>
         <li><strong>Información del dispositivo:</strong> Identificadores de dispositivo para analíticas y funcionalidad de la aplicación</li>
+        <li><strong class="highlight">Datos de ubicación:</strong> Acceso opcional a la ubicación para determinar tu código postal y encontrar representantes gubernamentales locales (senadores, representantes de la Cámara, gobernador, etc.) relevantes para el examen cívico del USCIS</li>
         <li><strong>Analíticas de uso:</strong> Patrones de uso y métricas de rendimiento para mejorar el servicio</li>
         <li><strong>Datos de fallos:</strong> Información de diagnóstico técnico para corregir errores y mejorar la estabilidad</li>
     </ul>
@@ -41,6 +43,7 @@
                 <li>Procesar pagos de suscripción y gestionar el acceso a la cuenta</li>
                 <li>Autenticar usuarios y mantener sesiones seguras</li>
                 <li>Almacenar y recuperar grabaciones de audio para prácticas de entrevista</li>
+                <li><strong class="highlight">Determinar tu código postal a partir de la ubicación para identificar representantes gubernamentales locales para la preparación del examen cívico</strong></li>
                 <li>Proporcionar soporte al cliente y asistencia técnica</li>
                 <li>Garantizar la estabilidad de la aplicación y evitar fallos</li>
             </ul>
@@ -56,6 +59,20 @@
     </ul>
     <p><strong>Importante:</strong> No usamos tus datos para publicidad, marketing, seguimiento o personalización más allá de la funcionalidad básica de la aplicación.</p>
 
+    <h2>Especificaciones de datos de ubicación</h2>
+    <div class="highlight">
+        <p><strong>Uso de la ubicación:</strong></p>
+        <ul>
+            <li><strong>Propósito:</strong> La ubicación se utiliza únicamente para determinar tu código postal, que ayuda a identificar tus representantes gubernamentales locales (senadores, representantes de la Cámara, gobernador, capital del estado) para la preparación del examen cívico del USCIS</li>
+            <li><strong>Opcional:</strong> El acceso a la ubicación es completamente opcional - puedes introducir tu código postal manualmente</li>
+            <li><strong>Procesamiento solo en el dispositivo:</strong> Los datos de ubicación se procesan completamente en tu dispositivo y nunca se transmiten a nuestros servidores ni se almacenan en nuestras bases de datos</li>
+            <li><strong>Sin almacenamiento en el servidor:</strong> Tus coordenadas precisas de ubicación nunca se envían ni se almacenan en nuestros servidores</li>
+            <li><strong>Almacenamiento local del código postal:</strong> Solo el código postal (derivado de la ubicación) se almacena localmente en tu dispositivo - nunca en nuestros servidores</li>
+            <li><strong>Sin seguimiento:</strong> No seguimos tu ubicación, movimientos ni almacenamos coordenadas precisas de ubicación en ningún lugar</li>
+            <li><strong>Control completo:</strong> Puedes denegar el permiso de ubicación y seguir usando todas las funciones de la aplicación introduciendo tu código postal manualmente</li>
+        </ul>
+    </div>
+
     <h2>Compartir información</h2>
     <p>No vendemos, intercambiamos ni compartimos tu información personal con terceros, excepto con nuestros proveedores de servicios esenciales:</p>
     <ul>
@@ -66,6 +83,7 @@
         <li><strong>Servicios de IA:</strong> Evaluación anónima de respuestas (los datos de audio no son almacenados por los proveedores de IA)</li>
         <li><strong>Requisitos legales:</strong> Cuando lo exija la ley o un proceso legal</li>
     </ul>
+    <p><strong>Nota:</strong> Los datos de ubicación se procesan completamente en tu dispositivo y nunca se transmiten a nuestros servidores ni se comparten con terceros.</p>
 
     <h2>Almacenamiento y seguridad de datos</h2>
     <ul>
@@ -73,6 +91,7 @@
         <li>Las grabaciones de audio se procesan para la evaluación de IA y se almacenan de forma segura en nuestra base de datos</li>
         <li>Los datos de práctica y progreso se almacenan de forma segura en nuestros servidores</li>
         <li>La información de pago es procesada por Apple y RevenueCat; no almacenamos detalles de pago</li>
+        <li><strong class="highlight">Los datos de ubicación se procesan completamente en tu dispositivo y nunca se transmiten a nuestros servidores (no se almacenan coordenadas en ningún lugar)</strong></li>
         <li>Usamos medidas de seguridad estándar de la industria y actualizamos regularmente nuestras prácticas de seguridad</li>
         <li>El acceso a los datos personales está restringido al personal autorizado</li>
     </ul>
@@ -81,6 +100,8 @@
     <ul>
         <li>Datos de cuenta y progreso: Se conservan mientras tu cuenta esté activa</li>
         <li>Grabaciones de audio: Se conservan hasta que las elimines o cierres tu cuenta</li>
+        <li><strong class="highlight">Datos de ubicación: Nunca se almacenan en ningún lugar - solo se usan temporalmente en tu dispositivo para determinar el código postal</strong></li>
+        <li><strong class="highlight">Código postal: Se almacena solo en tu dispositivo (nunca transmitido a nuestros servidores, se puede borrar reiniciando los datos)</strong></li>
         <li>Datos de analíticas: Los datos agregados y anonimizados pueden conservarse para mejorar el servicio</li>
         <li>Datos de fallos y diagnóstico: Se conservan para análisis técnico y depuración</li>
     </ul>
@@ -92,6 +113,8 @@
         <li>Solicitar la corrección de datos personales inexactos</li>
         <li>Solicitar la eliminación de tu cuenta y los datos asociados</li>
         <li>Exportar tu progreso de estudio y datos de sesiones</li>
+        <li><strong class="highlight">Controlar el acceso a la ubicación a través de la configuración del dispositivo o usar la entrada manual del código postal</strong></li>
+        <li><strong class="highlight">Borrar el código postal almacenado y los datos de representantes usando la función de reinicio de la aplicación</strong></li>
         <li>Optar por no participar en la recolección de analíticas opcionales (las analíticas básicas permanecen activas)</li>
         <li>Contactarnos por cualquier duda o preocupación sobre privacidad</li>
     </ul>
@@ -110,12 +133,13 @@
         <li><strong>Servicios de evaluación de IA:</strong> Servicios de terceros para la evaluación de respuestas (datos no almacenados)</li>
     </ul>
     <p>Te animamos a revisar las políticas de privacidad de estos servicios para entender cómo manejan tu información.</p>
+    <p><strong>Nota:</strong> Los datos de ubicación no se comparten con ninguno de estos servicios de terceros.</p>
 
     <h2>Usuarios internacionales</h2>
     <p>Nuestros servicios se proporcionan desde los Estados Unidos. Si accedes a nuestra aplicación desde fuera de los Estados Unidos, ten en cuenta que tu información puede ser transferida, almacenada y procesada en los Estados Unidos, donde se encuentran nuestros servidores y nuestra base de datos central.</p>
 
     <h2>Derechos de privacidad en California</h2>
-    <p>Los residentes de California tienen derechos adicionales bajo la Ley de Privacidad del Consumidor de California (CCPA), incluyendo el derecho a saber qué información personal se recolecta, el derecho a eliminar información personal y el derecho a optar por no vender información personal. Nosotros no vendemos información personal.</p>
+    <p>Los residentes de California tienen derechos adicionales bajo la Ley de Privacidad del Consumidor de California (CCPA), incluyendo el derecho a saber qué información personal se recolecta, el derecho a eliminar información personal y el derecho a optar por no vender información personal. Nosotros no vendemos información personal, incluyendo datos de ubicación.</p>
 
     <h2>Cambios en esta política</h2>
     <p>Podemos actualizar esta política de privacidad ocasionalmente para reflejar cambios en nuestras prácticas, tecnología, requisitos legales u otros factores. Notificaremos a los usuarios de cambios significativos actualizando la fecha de "Última actualización" y, cuando corresponda, proporcionando notificaciones adicionales a través de la aplicación o correo electrónico. El uso continuado de la aplicación tras los cambios implica la aceptación de la política actualizada.</p>
